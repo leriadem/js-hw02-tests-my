@@ -11,5 +11,4 @@ function sumBigIntegers(numStr1, numStr2) {
   return num1 + num2
 }
 
-console.log(sumBigIntegers('1234567890123456789012345678901234567890', '9876543210987654321098765432098765432100')) // виводить 18014398509481982n
 module.exports = sumBigIntegers
