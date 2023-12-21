@@ -6,10 +6,8 @@
 */
 
 function sumBigIntegers(numStr1, numStr2) {
-  const num1 = BigInt(numStr1)
-  const num2 = BigInt(numStr2)
-  return num1 + num2
+  // 'your code here'
+  return 'your code here'
 }
 
-console.log(sumBigIntegers('1234567890123456789012345678901234567890', '9876543210987654321098765432098765432100')) // виводить 18014398509481982n
 module.exports = sumBigIntegers

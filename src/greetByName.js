@@ -14,7 +14,7 @@
 */
 
 function greetByName(msg, name) {
-  return msg + ', ' + name
+  return 'your code here'
 }
 
 module.exports = greetByName
