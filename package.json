@@ -1,5 +1,5 @@
 {
-  "name": "hw1-jest-tests",
+  "name": "js-hw2-jest-tests",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -12,6 +12,6 @@
     "jest-environment-jsdom": "^29.7.0"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest --verbose"
   }
 }
