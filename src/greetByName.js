@@ -17,4 +17,4 @@ function greetByName(msg, name) {
   return 'your code here'
 }
 
-module.exports = greetByName
+export { greetByName }

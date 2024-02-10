@@ -1,4 +1,4 @@
-const getRandomInt = require('./getRandomInt.js')
+import { getRandomInt } from './getRandomInt.js'
 
 describe('getRandomInt function', () => {
   it('should return a number within the specified range', () => {

@@ -1,4 +1,4 @@
-const sumBigIntegers = require('./sumBigIntegers.js')
+import { sumBigIntegers } from './sumBigIntegers'
 
 describe('sumBigIntegers function', () => {
   it('should return the correct sum of two BigIntegers', () => {

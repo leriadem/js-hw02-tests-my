@@ -18,8 +18,6 @@ function getRandomInt(min, max) {
   return 'your code here'
 }
 
-module.exports = getRandomInt
-
 /*
  Використовуйте `Math.floor`, а не `Math.round` для забезпечення рівномірного розподілення випадкових чисел.
 
@@ -28,3 +26,4 @@ module.exports = getRandomInt
  Тому використовуйте `Math.floor` для забезпечення рівномірного розподілення. Це гарантує, що кожне число в діапазоні має однакову ймовірність з'явлення.
 */
 
+export { getRandomInt }

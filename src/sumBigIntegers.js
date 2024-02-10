@@ -10,4 +10,4 @@ function sumBigIntegers(numStr1, numStr2) {
   return 'your code here'
 }
 
-module.exports = sumBigIntegers
+export { sumBigIntegers }

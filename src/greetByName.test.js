@@ -1,4 +1,4 @@
-const greetByName = require('./greetByName.js')
+import { greetByName } from './greetByName'
 
 describe('greet function', () => {
   it('should return correct greeting', () => {
