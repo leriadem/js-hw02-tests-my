@@ -17,4 +17,4 @@ function greetByName(msg, name) {
   return msg + ', ' + name
 }
 
-module.exports = greetByName
+export { greetByName }
