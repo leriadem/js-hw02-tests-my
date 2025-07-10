@@ -8,7 +8,12 @@ console.log('JS #2. Домашнє завдання. Від простих до 
  */
 
 // i
+let i = 5;
 
+console.log(++i); // префіксний інкремент → 6
+console.log(i++); // постфіксний інкремент → 6 (але i вже 7)
+console.log(--i); // префіксний декремент → 6
+console.log(i--); // постфіксний декремент → 6 (але i вже 5)
 
 /*
  * #2
@@ -19,13 +24,22 @@ console.log('JS #2. Домашнє завдання. Від простих до 
  * У розрахунках можна використовувати раніше оголошену змінну myNum та/або числа.
  */
 var myNum = 10
-// myTest
-// +=
-// –=
-// *=
-// /=
-// %=
+var myTest = 20
 
+myTest += myNum      // 30
+console.log(myTest)
+
+myTest -= 5          // 25
+console.log(myTest)
+
+myTest *= 2          // 50
+console.log(myTest)
+
+myTest /= 5          // 10
+console.log(myTest)
+
+myTest %= 3          // 1
+console.log(myTest)
 
 /*
  * #3
@@ -33,11 +47,15 @@ var myNum = 10
  * Використовуючи властивості та методи об'єкта Math, присвойте змінним та відобразіть у консолі.
  */
 
-// константа Pi → myPi
-// округлене значення числа 89.279 → myRound
-// випадкове число між 0..10 (10 не включено) → myRandom
-// 3 у 5 степені → myPow
+var myPi = Math.PI // константа Pi → myPi
+var myRound = Math.round(89.279) // округлене значення числа 89.279 → myRound
+var myRandom = Math.random() * 10 // випадкове число між 0..10 (10 не включено) → myRandom
+var myPow = Math.pow(3, 5) // 3 у 5 степені → myPow
 
+console.log(myPi)
+console.log(myRound)
+console.log(myRandom)
+console.log(myPow)
 
 /*
  * #4
@@ -46,8 +64,12 @@ var myNum = 10
  * Присвойте ключу str рядок тексту "Мама мыла раму, рама мыла маму", ключу length встановіть довжину цього рядка.
  */
 
+var strObj = {
+  str: 'Мама мыла раму, рама мыла маму',
+  length: 'Мама мыла раму, рама мыла маму'.length
+}
 // Мама мыла раму, рама мыла маму
-// strObj
+console.log(strObj)
 
 
 /*
@@ -58,9 +80,11 @@ var myNum = 10
  * Результатом для isRama має бути буль true.
  */
 
-// isRamaPos
-// isRama
+var isRamaPos = strObj.str.indexOf('рама') // isRamaPos
+var isRama = isRamaPos !== -1 // isRama
 
+console.log(isRamaPos)
+console.log(isRama)
 
 /*
  * #6
@@ -71,8 +95,11 @@ var myNum = 10
  *      Результат: 'Мама моет раму, Рама держит маму'
  */
 
-// strReplace
+var strReplace = strObj.str
+  .replace('мыла', 'моет')
+  .replace('рама мыла маму', 'Рама держит маму')
 
+console.log(strReplace)
 
 /*
  * #7
@@ -80,6 +107,9 @@ var myNum = 10
  * Преобразуйте текст 'some STRING' у верхній, потім у нижній регістри, результат відобразіть у консолі.
  */
 
-// var someStr = 'some STRING'
-// var upperStr
-// var lowerStr
+var someStr = 'some STRING' // var someStr = 'some STRING'
+var upperStr = someStr.toUpperCase() // var upperStr
+var lowerStr = someStr.toLowerCase() // var lowerStr
+
+console.log(upperStr)
+console.log(lowerStr)

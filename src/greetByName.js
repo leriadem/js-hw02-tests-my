@@ -14,7 +14,7 @@
 */
 
 function greetByName(msg, name) {
-  return 'your code here'
+  return `${msg}, ${name}`;
 }
 
 export { greetByName }

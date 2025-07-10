@@ -15,7 +15,7 @@
 */
 
 function getRandomInt(min, max) {
-  return 'your code here'
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 /*
@@ -25,5 +25,8 @@ function getRandomInt(min, max) {
 
  Тому використовуйте `Math.floor` для забезпечення рівномірного розподілення. Це гарантує, що кожне число в діапазоні має однакову ймовірність з'явлення.
 */
+console.log(getRandomInt(1, 10));   // число от 1 до 10
+console.log(getRandomInt(40, 50));  // число от 40 до 50
+console.log(getRandomInt(1, 100));  // число от 1 до 100
 
 export { getRandomInt }
